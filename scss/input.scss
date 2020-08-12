@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Cera Pro Black";
+  src: url("./fonts/Cera Pro Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url("./fonts/Cera Pro Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url("./fonts/Cera Pro Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cera Pro Medium";
+  src: url("./fonts/Cera Pro Medium.otf") format("opentype");
+}
+
+$font-family-regular: "Cera Pro Light", sans-serif;
+$font-family-bold: "Cera Pro Medium", sans-serif;
+
+// COLOR PALETTE
+// 		ACCENT
+$clr-aw-purple: #B400D5;
+$clr-aw-electric-lime: #CFFC53;
+// 		BASE NEUTRALS
+$clr-light-grey: #F6F6F6;
+$clr-black: #000000;
+$clr-white: #ffffff;
+// 		HEADING
+$clr-dark-grey: #1A1A1A;
+
+
+// GENERAL STYLES
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	z-index: 1;
+	font-family: $font-family-regular;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	font-weight: 400;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+// TYPOGRAPHY
+
+h2 {
+	font: 3.6rem/4.9rem $font-family-bold;
+	margin: 0 0 70px;
+	color: $clr-dark-grey;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+}
+
+h3 {
+	font: 3.0rem/4.5rem $font-family-bold;
+	margin: 0 0 30px;
+	color: $clr-dark-grey;
+	// @media (max-width: $breakpoint-large) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+	// @media (max-width: $breakpoint-medium) {
+	// 	font-size: ;
+	// 	line-height: ;
+	// }
+}
+
+section {
+	padding: 40px 0;
+}
+
+// PADDINGS
+
+.p-0 {
+	padding: 0 !important;
+}
+.pt-0 {
+	padding-top: 0 !important;
+}
+.pr-0 {
+	padding-right: 0 !important;
+}
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+.pl-0 {
+	padding-left: 0 !important;
+}
+.py-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+// MARGINS
+
+.m-0 {
+	margin: 0 !important;
+}
+.mt-0 {
+	margin-top: 0 !important;
+}
+.mr-0 {
+	margin-right: 0 !important;
+}
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+.ml-0 {
+	margin-left: 0 !important;
+}
+.my-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+}

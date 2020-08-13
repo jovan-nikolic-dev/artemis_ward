@@ -86,6 +86,7 @@ h3 {
 
 section {
 	padding: 40px 0;
+
 }
 
 // PADDINGS
@@ -144,24 +145,45 @@ section {
 	margin: 0 auto;
 }
 
+.center {
+	align-items:center;
+}
+
 .cs-section-5 {
-	.uk-width-2-3 {
-		img {
-			height: 700px;
-		}
+	.uk-flex {
+		align-items:center;
+	}
+}
+
+.cs-section-6 {
+	.uk-flex div {
+		padding: 30px 80px;
 	}
 }
 
 .cs-section-12 {
     	background-color: #F6F6F6;
-    	margin-bottom: 80px;
+    	margin-top: 30px;
+    	margin-bottom: 30px;
 
     	p {
     		color: #1C1C1C;
+    	}
+
+    	a {
+    		color: black;
+    		text-decoration: none;
     	}
     }
 
 .cs-section-13 {
     	background-color: #F6F6F6;
-    	margin-bottom: 80px;
+    	margin-top: 30px;
+    	margin-bottom: 30px;
+
+
+    	a {
+    		color: black;
+    		text-decoration: none;
+    	}
     }

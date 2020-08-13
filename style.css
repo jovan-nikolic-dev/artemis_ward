@@ -269,19 +269,19 @@ section {
   font: 2.5rem/4.5rem "Cera Pro Medium", sans-serif;
 }
 
-.cs-section-3 .text, .cs-section-10 .text {
+.cs-section-3 .text, .cs-section-7 .cs-section-10 .text {
   margin-top: 100px;
 }
 @media (max-width: 960px) {
-  .cs-section-3 .text, .cs-section-10 .text {
+  .cs-section-3 .text, .cs-section-7 .cs-section-10 .text {
     margin-top: 0;
   }
 }
-.cs-section-3 .img, .cs-section-10 .img {
+.cs-section-3 .img, .cs-section-7 .cs-section-10 .img {
   padding-left: 100px;
 }
 @media (max-width: 960px) {
-  .cs-section-3 .img, .cs-section-10 .img {
+  .cs-section-3 .img, .cs-section-7 .cs-section-10 .img {
     padding-left: 40px;
   }
 }

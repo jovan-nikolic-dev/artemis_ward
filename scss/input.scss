@@ -92,8 +92,17 @@ p, ul, ol, dl, table, hr, pre, blockquote {
 	line-height: 3.5rem;
 }
 
+a, 
+a:focus,
+a:hover, 
+a:active, 
+a:visited {
+	text-decoration: none;
+}
+
 section {
-	padding: 40px 0;
+	margin: 40px 0;
+
 }
 
 
@@ -161,6 +170,91 @@ section {
 	margin: 0 auto;
 }
 
+// header
+
+.site-header {
+	// min-height: 730px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.header-wrapper {
+		min-height: 730px;
+		position: relative;
+
+		.ng-img {
+			position: absolute;
+			bottom: 45px;
+			right: 0px;
+		}
+	}
+	.main-nav {
+		padding: 20px 0;
+		color: $clr-white;
+
+		.nav-wrapper {
+			display: flex;
+			justify-content: space-between;
+
+			.nav-links {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-transform: uppercase;
+				font-size: 1.8rem;
+
+				ul {
+					padding: 0;
+					margin: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					li {
+						display: inline-block;
+
+						a,
+						a:hover,
+						a:visited,
+						a:active,
+						a:focus {
+							color: $clr-white;
+							// padding: 10px 23px;
+							margin: 0px 25px;
+
+						
+						}
+
+						a {
+							position: relative;
+							z-index: 1;
+						}
+						a:after {
+							position: absolute;
+							content: "";
+							bottom: -7px;
+							left: -10%;
+							width: 120%;
+							height: 2px;
+							border-radius: 1px;
+							background-color: $clr-white;
+							z-index: 2;
+							transition: all .5s ease;
+							opacity: 0;
+						}
+						a:hover:after {
+							opacity: 1;
+						}
+	
+						&:last-of-type a {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 // .section-1
 
 .cs-section-1 {
@@ -196,7 +290,7 @@ section {
 	}
 }
 
-.cs-section-2 {
+.cs-section-2, .cs-section-9 {
 	.img {
 		img {
 			width: 100%;
@@ -212,7 +306,7 @@ section {
 	}
 }
 
-.cs-section-3 {
+.cs-section-3, .cs-section-10 {
 	.text {
 		margin-top: 100px;
 		@media(max-width: 960px) {

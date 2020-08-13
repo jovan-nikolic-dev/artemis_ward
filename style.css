@@ -148,6 +148,11 @@ section {
   align-items: center;
 }
 
+.center-2 {
+  align-items: center;
+  justify-content: center;
+}
+
 .site-header {
   background-position: center center;
   background-size: cover;
@@ -253,12 +258,11 @@ section {
   padding-top: 30px;
 }
 
-.cs-section-5 .uk-flex {
+.cs-section-5 .uk-grid {
   align-items: center;
 }
-.cs-section-5 .uk-card img {
-  /*width: 100%;
-  height: fit-content;*/
+.cs-section-5 .p-30 {
+  padding-top: 30px;
 }
 
 .cs-section-6 .uk-grid div {

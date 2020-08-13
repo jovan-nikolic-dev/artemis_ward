@@ -65,6 +65,7 @@ a:visited {
 }
 
 section {
+  padding: 40px 0;
   margin: 40px 0;
 }
 
@@ -141,6 +142,10 @@ section {
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.center {
+  align-items: center;
 }
 
 .site-header {
@@ -244,38 +249,52 @@ section {
   width: 100%;
 }
 
-.cs-section-5 .uk-width-2-3 img {
-  height: 700px;
+.cs-section-5 .uk-flex {
+  align-items: center;
 }
 
-.cs-section-3 .text, .cs-section-10 .text {
+.cs-section-6 .uk-flex div {
+  padding: 30px 80px;
+}
+
+.cs-section-3 .text, .cs-section-7 .cs-section-10 .text {
   margin-top: 100px;
 }
 @media (max-width: 960px) {
-  .cs-section-3 .text, .cs-section-10 .text {
+  .cs-section-3 .text, .cs-section-7 .cs-section-10 .text {
     margin-top: 0;
   }
 }
-.cs-section-3 .img, .cs-section-10 .img {
+.cs-section-3 .img, .cs-section-7 .cs-section-10 .img {
   padding-left: 100px;
 }
 @media (max-width: 960px) {
-  .cs-section-3 .img, .cs-section-10 .img {
+  .cs-section-3 .img, .cs-section-7 .cs-section-10 .img {
     padding-left: 40px;
   }
 }
 
 .cs-section-12 {
   background-color: #F6F6F6;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .cs-section-12 p {
   color: #1C1C1C;
 }
+.cs-section-12 a {
+  color: black;
+  text-decoration: none;
+}
 
 .cs-section-13 {
   background-color: #F6F6F6;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cs-section-13 a {
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

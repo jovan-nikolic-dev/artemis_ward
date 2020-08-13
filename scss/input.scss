@@ -123,7 +123,12 @@ section {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
-
+.pt-85 {
+	padding-top: 85px;
+}
+.p-100 {
+	padding: 100px;
+}
 // MARGINS
 
 .m-0 {
@@ -155,8 +160,6 @@ section {
 	max-width: 1200px;
 	padding: 0 10px;
 	margin: 0 auto;
-	border-left: 1px solid red;
-	border-right: 1px solid red;
 }
 
 // .section-1
@@ -202,6 +205,14 @@ section {
 	}
 }
 
+.cs-section-5 {
+	.uk-width-2-3 {
+		img {
+			height: 700px;
+		}
+	}
+}
+
 .cs-section-3 {
 	.text {
 		margin-top: 100px;
@@ -216,3 +227,16 @@ section {
 		}
 	}
 }
+.cs-section-12 {
+    	background-color: #F6F6F6;
+    	margin-bottom: 80px;
+
+    	p {
+    		color: #1C1C1C;
+    	}
+    }
+
+.cs-section-13 {
+    	background-color: #F6F6F6;
+    	margin-bottom: 80px;
+    }

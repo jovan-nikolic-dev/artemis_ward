@@ -1,7 +1,4 @@
-$black: #000000;
-$white: #ffffff;
-$primary-green: #CCFF00;
-$input-border: #D8D8D8;
+
 @font-face {
   font-family: "Cera Pro Black";
   src: url("./fonts/Cera Pro Black.otf") format("opentype");
@@ -18,36 +15,81 @@ $input-border: #D8D8D8;
   font-family: "Cera Pro Medium";
   src: url("./fonts/Cera Pro Medium.otf") format("opentype");
 }
+$black: #000000;
+$white: #ffffff;
+$primary-green: #CCFF00;
+$input-border: #D8D8D8;
+
+.about-main{
+	h1{
+		margin-bottom: 40px;
+		font-size: 40px;
+		font-family: "Cera Pro Bold";
+
+	}
+	h2{
+		margin-bottom: 150px;
+		font-size: 34px;
+		font-family: "Cera Pro Light"; //CERA PRO REGULAR
+	}
+	.paragraph-col-1{
+		font-family: "Cera Pro Bold";
+		font-size: 30px;
+	}
+	.paragraph-col-2{
+		font-family: "Cera Pro Light"; //CERA PRO REGULAR
+		font-size: 20px;
+	}
+	.logo-wrapper{
+		margin-bottom: 160px;
+		.align-center{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	}
+}
 .creative-approach{
-	min-height: 100vh;
-	padding: 100px 0;
+	margin: 100px 0;
 	.heading{
+		font-family: "Cera Pro Bold";
+		font-size: 40px;
 		margin-bottom: 130px;
 	}
 	.content-section{
 		.content-box{
 			display: flex;
 			align-items: center;
-			padding: 40px 0;
+			margin: 40px 0;
+
+			&:not(:last-of-type){
+				padding-bottom: 40px;
+
+			}
 			.img-box{
 				background-color: $black;
 				margin-right: 50px;
 				max-width: 75px;
 				width: 100%;
-				padding: 15px 0;
-				text-align: center;
 			}
 			.text-box{
 				h2{
+					font-family: "Cera Pro Medium";
 					font-size: 24px;
 					.post-link{
 						color: $black;
 					}
 				}
+				p{
+					font-family: "Cera Pro Light"; //CERA PRO REGULAR
+					font-size: 18px;
+				}
 			}
 			&:not(:last-child){
 			border-bottom: 1px solid $black;
 			}
+			
 		}
 	}
 	.insights-link{
@@ -58,6 +100,7 @@ $input-border: #D8D8D8;
 		color: $black;
 		border-bottom: 2px solid $black;
 		padding: 10px 90px 10px 0px;
+		font-family: "Cera Pro Bold";
 		font-size: 28px;
 		text-transform: lowercase;
 		text-decoration: none;
@@ -121,7 +164,7 @@ $input-border: #D8D8D8;
 
 		}
 		.required-fields{
-			margin-top: -20px;
+			// margin-top: -20px;
 		}
 	}
 	.contact-input{
@@ -160,7 +203,9 @@ $input-border: #D8D8D8;
 			transform: translate(0, -50%);
 			width: 40px;
 			height: 100%;
+
 		}
+		
 	}
 	.submit{
 		background-color: transparent;
@@ -174,8 +219,8 @@ $input-border: #D8D8D8;
 	}
 	.btn-x{
 		position: absolute;
-		right: -50px;
-		top: -20px;
+		right: -5%;
+		top: -5%;
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
@@ -201,6 +246,7 @@ $input-border: #D8D8D8;
 			height: 60%;
 			background-color: $black;
 		}
+
 	}
 }
 

@@ -14,31 +14,65 @@
   font-family: "Cera Pro Medium";
   src: url("./fonts/Cera Pro Medium.otf") format("opentype");
 }
+.about-main h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: "Cera Pro Bold";
+}
+.about-main h2 {
+  margin-bottom: 150px;
+  font-size: 34px;
+  font-family: "Cera Pro Light";
+}
+.about-main .paragraph-col-1 {
+  font-family: "Cera Pro Bold";
+  font-size: 30px;
+}
+.about-main .paragraph-col-2 {
+  font-family: "Cera Pro Light";
+  font-size: 20px;
+}
+.about-main .logo-wrapper {
+  margin-bottom: 160px;
+}
+.about-main .logo-wrapper .align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .creative-approach {
-  min-height: 100vh;
-  padding: 100px 0;
+  margin: 100px 0;
 }
 .creative-approach .heading {
+  font-family: "Cera Pro Bold";
+  font-size: 40px;
   margin-bottom: 130px;
 }
 .creative-approach .content-section .content-box {
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  margin: 40px 0;
+}
+.creative-approach .content-section .content-box:not(:last-of-type) {
+  padding-bottom: 40px;
 }
 .creative-approach .content-section .content-box .img-box {
   background-color: #000000;
   margin-right: 50px;
   max-width: 75px;
   width: 100%;
-  padding: 15px 0;
-  text-align: center;
 }
 .creative-approach .content-section .content-box .text-box h2 {
+  font-family: "Cera Pro Medium";
   font-size: 24px;
 }
 .creative-approach .content-section .content-box .text-box h2 .post-link {
   color: #000000;
+}
+.creative-approach .content-section .content-box .text-box p {
+  font-family: "Cera Pro Light";
+  font-size: 18px;
 }
 .creative-approach .content-section .content-box:not(:last-child) {
   border-bottom: 1px solid #000000;
@@ -51,6 +85,7 @@
   color: #000000;
   border-bottom: 2px solid #000000;
   padding: 10px 90px 10px 0px;
+  font-family: "Cera Pro Bold";
   font-size: 28px;
   text-transform: lowercase;
   text-decoration: none;
@@ -111,9 +146,6 @@
   pointer-events: none;
   padding-left: 40px;
 }
-.detailed-newsletter .form .required-fields {
-  margin-top: -20px;
-}
 .detailed-newsletter .contact-input {
   background-color: transparent;
   outline: none;
@@ -158,8 +190,8 @@
 }
 .detailed-newsletter .btn-x {
   position: absolute;
-  right: -50px;
-  top: -20px;
+  right: -5%;
+  top: -5%;
   width: 25px;
   height: 25px;
   border-radius: 50%;

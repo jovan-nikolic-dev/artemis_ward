@@ -109,7 +109,12 @@ section {
 	padding-top: 0;
 	padding-bottom: 0;
 }
-
+.pt-85 {
+	padding-top: 85px;
+}
+.p-100 {
+	padding: 100px;
+}
 // MARGINS
 
 .m-0 {
@@ -138,3 +143,25 @@ section {
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
+.cs-section-5 {
+	.uk-width-2-3 {
+		img {
+			height: 700px;
+		}
+	}
+}
+
+.cs-section-12 {
+    	background-color: #F6F6F6;
+    	margin-bottom: 80px;
+
+    	p {
+    		color: #1C1C1C;
+    	}
+    }
+
+.cs-section-13 {
+    	background-color: #F6F6F6;
+    	margin-bottom: 80px;
+    }

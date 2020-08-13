@@ -51,7 +51,6 @@ body {
 	font-size: 1.6rem;
 	line-height: 3rem;
 	font-weight: 400;
-	overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 // TYPOGRAPHY
@@ -84,9 +83,20 @@ h3 {
 	// }
 }
 
+ul {
+	list-style: none;
+}
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+	margin: 0 0 40px;
+	line-height: 3.5rem;
+}
+
 section {
 	padding: 40px 0;
+	border-bottom: 1px solid black;
 }
+
 
 // PADDINGS
 
@@ -105,9 +115,13 @@ section {
 .pl-0 {
 	padding-left: 0 !important;
 }
+.px-0 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
 .py-0 {
-	padding-top: 0;
-	padding-bottom: 0;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 // MARGINS
@@ -127,9 +141,13 @@ section {
 .ml-0 {
 	margin-left: 0 !important;
 }
+.mx-0 {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
 .my-0 {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .container {
@@ -137,4 +155,64 @@ section {
 	max-width: 1200px;
 	padding: 0 10px;
 	margin: 0 auto;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+}
+
+// .section-1
+
+.cs-section-1 {
+	.section-item-headline {
+		.action-link {
+			color: $clr-aw-purple;
+			&:active,
+			&:visited,
+			&:focus {
+				color: $clr-aw-purple;
+			}
+
+			img {
+				margin-left: 20px;
+			}
+		}
+	}
+	.section-item-project {
+		padding-left: 100px;
+		padding-top: 70px;
+
+		@media(max-width: 960px) {
+			padding-left: 30px;
+		}
+		.project-info {
+			display: flex;
+
+			&-keys {
+				min-width: 70px;
+				color: $clr-aw-purple;
+			}
+		}
+	}
+}
+
+.cs-section-2 {
+	.img {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.cs-section-3 {
+	.text {
+		margin-top: 100px;
+		@media(max-width: 960px) {
+			margin-top: 0;
+		}
+	}
+	.img {
+		padding-left: 100px;
+		@media(max-width: 960px) {
+			padding-left: 40px
+		}
+	}
 }

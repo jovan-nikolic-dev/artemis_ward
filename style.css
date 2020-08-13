@@ -33,8 +33,6 @@ body {
   font-size: 1.6rem;
   line-height: 3rem;
   font-weight: 400;
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
 }
 
 h2 {
@@ -49,8 +47,18 @@ h3 {
   color: #1A1A1A;
 }
 
+ul {
+  list-style: none;
+}
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+  margin: 0 0 40px;
+  line-height: 3.5rem;
+}
+
 section {
   padding: 40px 0;
+  border-bottom: 1px solid black;
 }
 
 .p-0 {
@@ -73,9 +81,14 @@ section {
   padding-left: 0 !important;
 }
 
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .m-0 {
@@ -98,9 +111,14 @@ section {
   margin-left: 0 !important;
 }
 
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .my-0 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .container {
@@ -108,6 +126,55 @@ section {
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+.cs-section-1 .section-item-headline .action-link {
+  color: #B400D5;
+}
+.cs-section-1 .section-item-headline .action-link:active, .cs-section-1 .section-item-headline .action-link:visited, .cs-section-1 .section-item-headline .action-link:focus {
+  color: #B400D5;
+}
+.cs-section-1 .section-item-headline .action-link img {
+  margin-left: 20px;
+}
+.cs-section-1 .section-item-project {
+  padding-left: 100px;
+  padding-top: 70px;
+}
+@media (max-width: 960px) {
+  .cs-section-1 .section-item-project {
+    padding-left: 30px;
+  }
+}
+.cs-section-1 .section-item-project .project-info {
+  display: flex;
+}
+.cs-section-1 .section-item-project .project-info-keys {
+  min-width: 70px;
+  color: #B400D5;
+}
+
+.cs-section-2 .img img {
+  width: 100%;
+}
+
+.cs-section-3 .text {
+  margin-top: 100px;
+}
+@media (max-width: 960px) {
+  .cs-section-3 .text {
+    margin-top: 0;
+  }
+}
+.cs-section-3 .img {
+  padding-left: 100px;
+}
+@media (max-width: 960px) {
+  .cs-section-3 .img {
+    padding-left: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

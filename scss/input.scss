@@ -316,6 +316,7 @@ section {
 	.text-4 {
 		padding-top: 30px;
 	}
+
 }
 
 .cs-section-5 {
@@ -324,7 +325,10 @@ section {
 	}
     .p-30 {
     	padding-top: 30px;
-    }
+		}
+		@media (max-width: 1200px) {
+			text-align: center;
+		}
 }
 
 .cs-section-6 {
@@ -358,8 +362,20 @@ section {
 		padding-top:120px;
 	}
 	
+.txc {
+	text-align: center;
+}
 	h3 {
 		padding-top: 90px;
+	}
+
+}
+
+.cs-section-11 {
+	.txe {
+		@media (max-width: 1200px) {
+	   text-align: end;
+		}
 	}
 }
 .cs-section-12 {
@@ -387,7 +403,9 @@ section {
 .cs-section-13 {
 
     	background-color: #F6F6F6;
-
+       .uk-grid {
+				 padding-bottom: 30px;
+			 }
 
     	a {
     		color: black;
@@ -395,7 +413,14 @@ section {
     	}
     	.column {
     		flex-direction:column;
-    	}
+			}
+			.black {
+
+				@media (max-width: 1200px) {
+					font-size: 3rem;
+					padding-bottom: 30px;
+				}
+			}
     }
 
 
